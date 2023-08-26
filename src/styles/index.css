@@ -1,1 +1,149 @@
 /* Desenvolva sua estilização aqui ... */
+body {
+    background-color: var(--color-grey-9);
+    width: 50%;
+    margin: 10px auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 100%;
+}
+
+.title, .subtitle {
+    color: var(--color-grey-1);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.dark_mode {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-grey-8);
+    position: relative;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.filter__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.genre__filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.buttons__genre {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button {
+    width: 70px;
+    height: 32px;
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 8px;
+    transition: background-color 0.5s, color 0.5s ease;
+}
+
+.button:hover{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8); 
+}
+
+.price__filter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.text {
+    color: var(--color-grey-2);
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#price__bar {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.albums__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    background-color: var(--color-grey-8);
+    padding:16px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+img {
+    width: 100%;
+    /* height: 100px; */
+}
+
+.album_info {
+    color: var(--color-grey-2);
+    font-size: 12px;
+}
+
+.album_title, .price {
+    font-weight: 600;
+    color: var(--color-grey-1);
+}
+
+.price_buy__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy__button {
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+    border: none;
+    padding: 7px 8px;
+    border-radius: 5px;
+}

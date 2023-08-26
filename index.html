@@ -7,14 +7,37 @@
     <title>Open Music</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    <script type="module" src="./src/scripts/theme.js" defer></script>
     <!-- SCRIPTS  -->
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1 class="title">open music</h1>
+      <button class="dark_mode">
+        <img class="icon">
+      </button>
+    </header>
+    <main class="container">
+      <section class="filter__container">
+        <div class="genre__filter">
+          <h2 class="subtitle">Gênero Musical</h2>
+          <ul class="buttons__genre"></ul>
+        </div>
+        <div class="price__filter">
+          <h2 class="subtitle">Definir Preço</h2>
+          <p class="text">Até R$ ...</p>
+          <input type="range" id="price__bar" name="price__bar" min="0" max="100">
+        </div>
+      </section>
+
+      <section class="cards__container">
+        <h2 class="subtitle">Álbuns Encontrados</h2>
+        <ul class="albums__cards"></ul>
+      </section>
+    </main>
   </body>
 </html>
